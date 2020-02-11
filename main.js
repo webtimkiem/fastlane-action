@@ -85,7 +85,7 @@ function installBundleDependencies(pathToGemFile, customInstallPath) {
     const initialDirectory = process.cwd();
     const pathToGemFileFolder = pathToGemFile.split("/").slice(0, -1).join("/");
     shell.cd(pathToGemFileFolder);
-    shell.exec("bundle install --jobs 2");
+    // shell.exec("bundle install --jobs 2");
     shell.cd(initialDirectory);
 }
 
